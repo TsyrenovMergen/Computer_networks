@@ -52,6 +52,7 @@ def main():
             results.append([site, stats[0][:-5], stats[1], stats[2]])
         else:
             print(f"Не удалось получить статистику для {site}")
+    write(results, output_file)
     print(f"Результаты сохранены в {output_file}")
 
 
